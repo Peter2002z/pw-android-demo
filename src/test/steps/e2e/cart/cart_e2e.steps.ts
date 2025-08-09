@@ -1,11 +1,7 @@
-import { Given, When, Then } from '@cucumber/cucumber';
+import { When, Then } from '@cucumber/cucumber';
 import { expect } from 'chai';
 import { MobileWorld } from '../../../support/mobile.world';
 
-Given('I add the first product to the cart', async function (this: MobileWorld) {
-  const addButtons = await this.inventoryPage.addToCartButtons;
-  await addButtons[0].click();
-});
 
 When('I remove the product from the cart', async function (this: MobileWorld) {
   const removeButtons = await this.driver.$$(`~test-REMOVE`);

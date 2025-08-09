@@ -1,4 +1,4 @@
-@e2e
+@e2e @login
 Feature: Login to SauceDemo app
 
   Scenario: User logs in successfully

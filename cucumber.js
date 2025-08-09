@@ -10,7 +10,6 @@ module.exports = {
       'src/test/features/ui/**/*.feature',
       'src/test/features/e2e/**/*.feature'
     ],
-    tags: '@ui',
     format: ['progress'],
     publishQuiet: true,
     worldParameters: {},
