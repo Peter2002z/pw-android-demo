@@ -5,5 +5,5 @@ export const androidCaps = {
   'appium:automationName': 'UiAutomator2',
   'appium:appPackage': 'com.swaglabsmobileapp',
   'appium:appActivity': 'com.swaglabsmobileapp.MainActivity',
-  'appium:noReset': true,
+  'appium:noReset': false
 };

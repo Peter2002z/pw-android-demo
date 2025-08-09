@@ -1,10 +1,7 @@
-import { Given, When, Then } from '@cucumber/cucumber';
+import { When, Then } from '@cucumber/cucumber';
 import { expect } from 'chai';
 import { MobileWorld } from '../../../support/mobile.world';
 
-Given('I launch the SauceDemo app', async function (this: MobileWorld) {
-  await this.launchApp();
-});
 
 When('I enter valid username and password', async function (this: MobileWorld) {
   await this.loginPage.login('standard_user', 'secret_sauce');

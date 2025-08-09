@@ -1,4 +1,4 @@
-@login @ui
+@ui @login
 Feature: Login screen UI validation - SauceDemo
 
   Scenario: UI elements on login screen are visible

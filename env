@@ -1,0 +1,4 @@
+ANDROID_HOME=C:/Users/haph1/AppData/Local/Android/Sdk
+ANDROID_SDK_ROOT=C:/Users/haph1/AppData/Local/Android/Sdk
+PATH=${ANDROID_HOME}/platform-tools;${ANDROID_HOME}/emulator;${ANDROID_HOME}/tools;${ANDROID_HOME}/tools/bin
+
