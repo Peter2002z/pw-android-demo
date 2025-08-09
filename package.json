@@ -1,0 +1,40 @@
+{
+  "name": "pw-android-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "cross-env DEBUG=cucumber:* cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peter2002z/pw-android-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peter2002z/pw-android-demo/issues"
+  },
+  "homepage": "https://github.com/Peter2002z/pw-android-demo#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.1.0",
+    "@types/chai": "^5.2.2",
+    "@types/node": "^24.2.0",
+    "@wdio/allure-reporter": "^9.18.0",
+    "@wdio/appium-service": "^9.18.4",
+    "allure-commandline": "^2.34.1",
+    "appium": "^2.19.0",
+    "appium-uiautomator2-driver": "^4.2.8",
+    "appium-xcuitest-driver": "^9.10.4",
+    "chai": "^5.2.0",
+    "cross-env": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "webdriverio": "^9.18.4"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}
