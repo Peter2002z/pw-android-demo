@@ -5,4 +5,5 @@ Feature: Inventory interactions - SauceDemo
     Given I launch the SauceDemo app
     And I log in with valid credentials
     When I add the first product to the cart
-    Then I should see the cart badge showing "1"
+    And I add the second product to the cart
+    Then I should see the cart badge showing "2"

@@ -17,7 +17,17 @@ export default class InventoryPage {
     return this.driver.$$(`~test-ADD TO CART`);
   }
 
-  cartBadge(count: string) {
-    return this.driver.$(`~test-${count}`);
+  get cartBadgeTextElement() {
+  return this.driver.$('//android.view.ViewGroup[@content-desc="test-Cart"]/android.view.ViewGroup/android.widget.TextView');
+}
+
+async getCartBadgeCount() {
+  const badgeTextEl = await this.cartBadgeTextElement;
+  if (await badgeTextEl.isDisplayed()) {
+    return await badgeTextEl.getText();
   }
+  return null;
+}
+
+
 }
