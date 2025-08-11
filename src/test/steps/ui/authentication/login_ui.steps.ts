@@ -12,13 +12,16 @@ Given('I launch the SauceDemo app', { timeout: 60000 }, async function (this: Mo
 });
 
 Then('I should see username field', async function (this: MobileWorld) {
+  await this.loginPage.usernameInput.waitForDisplayed({ timeout: 10000 });
   expect(await this.loginPage.usernameInput.isDisplayed()).to.be.true;
 });
 
 Then('I should see password field', async function (this: MobileWorld) {
+  await this.loginPage.passwordInput.waitForDisplayed({ timeout: 10000 });
   expect(await this.loginPage.passwordInput.isDisplayed()).to.be.true;
 });
 
 Then('I should see login button', async function (this: MobileWorld) {
+  await this.loginPage.loginButton.waitForDisplayed({ timeout: 10000 });
   expect(await this.loginPage.loginButton.isDisplayed()).to.be.true;
 });

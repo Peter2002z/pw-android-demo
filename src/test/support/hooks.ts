@@ -1,11 +1,10 @@
-import { Before, After} from '@cucumber/cucumber';
+import { Before, After } from '@cucumber/cucumber';
 import { MobileWorld } from './mobile.world';
 
-Before({ timeout: 60000 },async function (this: MobileWorld) {
+Before({ timeout: 60000 }, async function (this: MobileWorld) {
   await this.launchApp({ 'appium:noReset': false });
 });
 
 After(async function (this: MobileWorld) {
-  console.log("Driver in After:", this.driver);
   await this.closeApp();
 });
